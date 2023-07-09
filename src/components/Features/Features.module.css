@@ -1,0 +1,18 @@
+.section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conteinerText {
+  font-size: 16px;
+  width: 90%;
+  text-align: center;
+
+  @media (min-width: 768px) {
+
+
+    width: 470px;
+
+  }
+}

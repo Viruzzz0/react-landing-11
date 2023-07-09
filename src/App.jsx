@@ -1,6 +1,7 @@
 import './App.css'
 import InitialPage from './components/InitialPage/InitialPage'
 import Header from './components/Header/Header'
+import Features from './components/Features/Features'
 
 function App () {
   return (
@@ -9,6 +10,7 @@ function App () {
 
       <main>
         <InitialPage />
+        <Features />
       </main>
     </div>
   )
