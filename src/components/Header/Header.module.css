@@ -1,0 +1,111 @@
+.invisible {
+  display: none !important
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem 0;
+  font-size: 15px;
+  align-items: center;
+}
+
+.listMenuHorizontal {
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 1.3rem;
+    list-style-type: none;
+    position: initial;
+
+  }
+}
+
+.listMenuHorizontal a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.navBar {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #262d48ef;
+}
+
+.headerBar {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+.conteinerNavBar {
+  display: flex;
+  flex-direction: column;
+  margin: 0 10%;
+  height: 90%;
+}
+
+.listMenu {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  list-style-type: none;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  color: white;
+  padding: 0;
+  text-align: center;
+}
+
+.listMenu a {
+  color: inherit;
+  text-decoration: none;
+  padding: 10px;
+}
+
+
+.burgerMenu {
+  background-color: inherit;
+  border-style: none;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
+.close {
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 1px;
+  border-radius: 25px;
+  background-color: #f0f8ff27
+}
+
+.redesFooter {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: end;
+}
+
+.redesFooter div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  gap: 40px;
+}

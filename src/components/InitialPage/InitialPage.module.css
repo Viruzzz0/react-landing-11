@@ -1,0 +1,98 @@
+.section {
+
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+
+  @media (min-width: 768px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+  }
+}
+
+.conteinerIllustration {
+  width: 100%;
+  position: relative;
+
+  @media (min-width: 768px) {
+    width: 50%;
+  }
+}
+
+.conteinerIllustration img {
+  width: 100%;
+}
+
+.backgroundCard {
+  position: absolute;
+  width: 100%;
+  height: 70%;
+  background-color: #4c60cf;
+  border-bottom-left-radius: 200px;
+  top: 30%;
+  right: -12.5%;
+  z-index: -1;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 130%;
+    height: 70%;
+    background-color: #4c60cf;
+    border-bottom-left-radius: 200px;
+    top: 30%;
+    right: -50%;
+    z-index: -1;
+  }
+}
+
+/* -------------------------------- */
+
+.conteinerHome {
+  width: 100%;
+
+  @media (min-width: 768px) {
+    width: 50%;
+    display: flex;
+  }
+}
+
+.conteinerHome>div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media (min-width: 768px) {
+    text-align: start;
+    align-items: start;
+  }
+}
+
+.conteinerHome h2 {
+  font-size: 2.3rem;
+
+}
+
+.conteinerHome p {
+  color: #9e9e9e;
+}
+
+.conteinerHome button {
+  border: solid 0;
+  padding: 15px;
+  border-radius: 10px;
+
+}
+
+.conteinerButton {
+  display: flex;
+  gap: 10px;
+}
+
+.conteinerButton button:nth-child(2) {
+  background-color: #4c60cf;
+  color: white;
+
+}
