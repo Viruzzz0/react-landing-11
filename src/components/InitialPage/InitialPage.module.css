@@ -15,6 +15,7 @@
 .conteinerIllustration {
   width: 100%;
   position: relative;
+  z-index: -1;
 
   @media (min-width: 768px) {
     width: 50%;
@@ -92,8 +93,8 @@
 .conteinerHome button {
   border: solid 0;
   padding: 15px;
-  border-radius: 10px;
-
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .conteinerButton {

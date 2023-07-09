@@ -18,14 +18,14 @@ function Header () {
       </svg>
       <nav>
         <ul className={`${css.listMenuHorizontal}`}>
-          <li><a href='default.asp'>Features</a></li>
-          <li><a href='news.asp'>Pricing</a></li>
-          <li><a href='contact.asp'>Contact</a></li>
-          <li><a href='about.asp'>Login</a></li>
+          <li><a href='default.asp'>FEATURES</a></li>
+          <li><a href='news.asp'>PRICING</a></li>
+          <li><a href='contact.asp'>CONTACT</a></li>
+          <li><a className={css.buttonLogin} href='about.asp'>LOGIN</a></li>
         </ul>
       </nav>
       <button
-        className={css.burgerMenu}
+        className={`${css.burgerMenu} ${openMenu ? css.invisible : ''}`}
         onClick={() => setOpenMenu(!openMenu)}
       >
         <svg xmlns='http://www.w3.org/2000/svg' width='18' height='15'>
@@ -54,7 +54,7 @@ function Header () {
             <span className={css.line} />
             <li><a href='contact.asp'>CONTACT</a></li>
             <span className={css.line} />
-            <li><a href='about.asp'>LOGIN</a></li>
+            <li><a className={css.buttonLogin} href='about.asp'>LOGIN</a></li>
           </ul>
 
           <div className={css.redesFooter}>
