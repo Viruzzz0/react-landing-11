@@ -2,11 +2,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 35px;
 }
 
 .conteinerText {
   font-size: 16px;
-  width: 90%;
+  width: 100%;
   text-align: center;
 
   @media (min-width: 768px) {
@@ -14,5 +15,66 @@
 
     width: 470px;
 
+  }
+}
+
+/* ----------------------- */
+
+.conteinerViewTab {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 75px;
+
+  @media (min-width: 768px) {
+    width: 470px;
+  }
+}
+
+.conteinerViewTab ul {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 0;
+  margin: 0;
+}
+
+.conteinerViewTab .line {
+  background-color: rgba(0, 0, 0, 0.192);
+  width: 100%;
+  height: 1px;
+}
+
+
+.conteinerViewTab .conteinerIllustration {
+  position: relative;
+}
+
+.conteinerViewTab .conteinerIllustration img {
+  width: 100%;
+
+}
+
+.conteinerViewTab .backgroundCard {
+  position: absolute;
+  width: 100%;
+  height: 85%;
+  background-color: #4c60cf;
+  border-bottom-right-radius: 140px;
+  top: 30%;
+  left: -12.5%;
+  z-index: -1;
+
+  @media (min-width: 768px) {
+    position: absolute;
+    width: 100%;
+    height: 70%;
+    background-color: #4c60cf;
+    border-bottom-left-radius: 200px;
+    top: 30%;
+    right: -25%;
+    z-index: -1;
   }
 }
