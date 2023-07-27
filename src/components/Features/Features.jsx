@@ -24,18 +24,24 @@ function Features () {
       </div>
       <div className={css.listSelect}>
         <ul>
-          <li onClick={() => setSelectTab(tabs.SIMPLE_BOOKMARKIN)}>Simple Bookmarking</li>
-          <span className={css.line}>
-            <span className={selectTab === tabs.SIMPLE_BOOKMARKIN ? css.selectedlLine : ''} />
-          </span>
-          <li onClick={() => setSelectTab(tabs.SPEEDY_SEARCHING)}>Speedy Searching</li>
-          <span className={css.line}>
-            <span className={selectTab === tabs.SPEEDY_SEARCHING ? css.selectedlLine : ''} />
-          </span>
-          <li onClick={() => setSelectTab(tabs.EASY_SHARING)}>Easy Sharing</li>
-          <span className={css.line}>
-            <span className={selectTab === tabs.EASY_SHARING ? css.selectedlLine : ''} />
-          </span>
+          <li onClick={() => setSelectTab(tabs.SIMPLE_BOOKMARKIN)}>
+            Simple Bookmarking
+            <span className={css.line}>
+              <span className={selectTab === tabs.SIMPLE_BOOKMARKIN ? css.selectedlLine : ''} />
+            </span>
+          </li>
+          <li onClick={() => setSelectTab(tabs.SPEEDY_SEARCHING)}>
+            Speedy Searching
+            <span className={css.line}>
+              <span className={selectTab === tabs.SPEEDY_SEARCHING ? css.selectedlLine : ''} />
+            </span>
+          </li>
+          <li onClick={() => setSelectTab(tabs.EASY_SHARING)}>
+            Easy Sharing
+            <span className={css.line}>
+              <span className={selectTab === tabs.EASY_SHARING ? css.selectedlLine : ''} />
+            </span>
+          </li>
         </ul>
       </div>
       <Tabs selectTab={selectTab} />
@@ -72,10 +78,11 @@ function Tabs ({ selectTab }) {
       </div>
       <div className={css.conteinerTextTab}>
         {selectedTab && (
-          <>
+          <div>
             <h2>{selectedTab.heading}</h2>
             <p>{selectedTab.description}</p>
-          </>
+            <button className={css.btnMoreInfo}>More Info</button>
+          </div>
         )}
       </div>
     </div>

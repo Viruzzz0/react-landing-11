@@ -8,3 +8,10 @@
   flex-direction: column;
   gap: 100px;
 }
+
+button {
+  border: solid 0;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.1);
+}
