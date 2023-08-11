@@ -1,8 +1,11 @@
-.page {
-  margin: 0 9%;
-}
+/* html {
+  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
+} */
 
 .page main {
+  margin: 0 9%;
   margin-top: 25px;
   display: flex;
   flex-direction: column;

@@ -41,3 +41,7 @@
 .description:end {
   background-color: aqua;
 }
+
+.reverse svg {
+  transform: scale(-1);
+}
