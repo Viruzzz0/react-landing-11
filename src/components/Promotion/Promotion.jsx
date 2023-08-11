@@ -1,22 +1,8 @@
-import { useState, useRef } from 'react'
 import css from './Promotion.module.css'
+import useValidation from '../../hooks/useValidation'
 
 function Promotion () {
-  const [isValid, setValid] = useState(true)
-  const emailRef = useRef(null)
-
-  const handleSubmitEmail = (event) => {
-    event.preventDefault()
-    console.log(emailRef.current.value)
-    const emailValue = emailRef.current.value
-
-    if (!isNaN(emailValue)) {
-      console.log('is number: ', emailValue)
-      setValid(false)
-    }
-
-    emailRef.current.focus()
-  }
+  const { valid, emailRef, handleSubmitEmail } = useValidation()
 
   return (
     <section className={css.section}>
@@ -30,7 +16,7 @@ function Promotion () {
           action=''
           onSubmit={handleSubmitEmail}
         >
-          <div className={`${css.inputContainer} ${isValid ? '' : css.inputError}`}>
+          <div className={`${css.inputContainer} ${valid.isValid ? '' : css.inputError}`}>
             <div>
               <input
                 type='text'
@@ -41,7 +27,7 @@ function Promotion () {
                 required
               />
               {
-                !isValid && (
+                !valid.isValid && (
                   <svg width='25px' height='25px' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'>
                     <g id='SVGRepo_bgCarrier' strokeWidth='0' />
                     <g id='SVGRepo_tracerCarrier' strokeLinecap='round' strokeLinejoin='round' />
@@ -52,7 +38,11 @@ function Promotion () {
                 )
               }
             </div>
-            {!isValid && (<p>test de texto de error</p>)}
+            {
+              !valid.isValid && (
+                <p>{valid.errorMessage}</p>
+              )
+            }
           </div>
 
           <button type='submit'>Contact us</button>

@@ -51,6 +51,7 @@ button {
 .inputContainer {
   display: flex;
   flex-direction: column;
+  text-align: start;
 }
 
 .inputError {
@@ -63,7 +64,7 @@ button {
 .inputContainer p {
   letter-spacing: initial;
   font-size: 11px;
-  margin: 6px 0;
+  margin: 6px;
 }
 
 
