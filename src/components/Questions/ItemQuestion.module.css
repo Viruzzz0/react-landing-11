@@ -32,6 +32,7 @@
 }
 
 .description {
+  line-height: 1.8;
   margin: 26px 0;
   color: var(--textPage);
   font-size: 16px;
